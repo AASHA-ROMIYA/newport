@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" 
+          content="width=device-width,
+                   initial-scale=1.0">
+    <title>Home</title>               
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Aasha</label>
+        <ul>  
+            <li><a  class="active" href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="intro">
+        <div class="info">
+            <h1>Hi, <span style="color:aqua" id="name">Friend!</span></h1>
+            <h2>I'm AASHA S</h2>
+            <h3>Web Developer</h3>
+        </div>
+        <div class="image">
+            <img src="image.png" alt="">
+        </div>
+    </div>
+</body>
+<script>
+    function wordss(){
+    var words = ["Friends","Guys","Sir","Madam","Buddies","Chums"];
+    var word = Math.floor(Math.random() * 6);
+    const name = document.getElementById('name');
+    name.innerText = words[word]+"!";
+}
+
+setInterval(wordss, 5000);
+</script>
+
+</html>
